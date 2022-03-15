@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Task3",
+			"path": "..\\Task3"
+		},
+		{
+			"name": "main-background_files",
+			"path": "..\\..\\..\\..\\Downloads\\main-background_files"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Task3",
+		"liveServer.settings.port": 5501
+	}
+}

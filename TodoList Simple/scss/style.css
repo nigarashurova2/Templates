@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+*, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.97);
+}
+
+.wrapper {
+  margin: 60px auto;
+  max-width: 500px;
+  min-height: 380px;
+  padding: 25px;
+  background-color: #131010;
+  -webkit-box-shadow: 1px 1px 3px 3px rgba(8, 216, 42, 0.842);
+          box-shadow: 1px 1px 3px 3px rgba(8, 216, 42, 0.842);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper header {
+  font-size: 54px;
+  font-weight: 600;
+  color: rgba(8, 216, 42, 0.842);
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Gluten', cursive;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+}
+
+.wrapper .inputField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.wrapper .inputField input {
+  width: 85%;
+  height: 100%;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  border-radius: 3px;
+  padding-left: 15px;
+  outline: none;
+}
+
+.wrapper .inputField button {
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: rgba(8, 216, 42, 0.842);
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.wrapper .inputField button:hover {
+  background-color: rgba(77, 250, 106, 0.842);
+}
+
+.wrapper .todoContainer {
+  padding-bottom: 10px;
+}
+
+.wrapper .todoContainer p.paragraph-styling {
+  border: 1px solid #ccc;
+  font-size: 20px;
+  border-radius: 3px;
+  padding: 6px;
+  padding-left: 15px;
+  background-color: white;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper footer {
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper footer button {
+  padding: 10px 20px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: rgba(8, 216, 42, 0.842);
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.wrapper footer button:hover {
+  background-color: rgba(77, 250, 106, 0.842);
+}
+/*# sourceMappingURL=style.css.map */

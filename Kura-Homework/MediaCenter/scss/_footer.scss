@@ -1,0 +1,71 @@
+footer {
+    padding: 54px 0px 0px;
+    background-color: #f9f9f9;
+    .container.section-1 {
+        aside{
+            h4 {
+                font-size: 18px;
+                color: #4e4e4e;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: -1px;
+                border-bottom: 1px solid #e0dfdf;
+                padding-bottom: 11px;
+                margin-bottom: 30px;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                li{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 0 20px;
+                    width: 100%;
+                    .text-content {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        h6 {
+                            color: #0e53a5;
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-bottom: 65px;
+                        }
+                        bdi {
+                            margin-top: 15px;
+                            line-height: 28px;
+                                font-size: 15px;
+                                color: rgb(97, 96, 96);
+                                font-weight: 600;
+                            span{
+                                line-height: 28px;
+                                font-size: 15px;
+                                color: rgb(97, 96, 96);
+                            }
+                        }
+                    }
+                    .image-content{
+                        width: 50%;
+                        .img-span{
+                            width: 100%;
+                            padding: 10px;
+                            border: 1px solid rgb(201, 198, 198, 0.4);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 100%;
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fontawesome 5.15 -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>MediaCenter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div>
+                <ul class="navbar">
+
+                    <li onclick="menuToggleNav();"><a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown_menu-nav">
+                            <li><a class="active" href="#">Home v1</a></li>
+                            <li><a href="#">Home v2</a></li>
+                        </ul>
+                    </li>
+
+                    <li onclick="menuToggleNav2();"><a href="#">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown_menu-nav dropdown_menu-nav-2 ">
+                            <li><a class="active" href="#">About v1</a></li>
+                            <li><a href="#">About v2</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="menuToggleNav3();"><a href="#">Blog <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown_menu-nav dropdown_menu-nav-3 ">
+                            <li><a class="active" href="#">Blog v1</a></li>
+                            <li><a href="#">Blog v2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a class="a" href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a class="a" href="#">ECWID DEMO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="header-content">
+            <div class="container">
+                <div class="col-xs-12 col-md-12  logo">
+                    <a href="#">
+                        <img src="image/logo.png" alt="">
+                    </a>
+                </div>
+
+
+                <div class="col-xs-12 search-holder">
+                    <div class="contact">
+                        <div class="phone">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span> (+800) 123 456 7890</span>
+                        </div>
+                        <div class="email">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>contact@support.com</span>
+                        </div>
+                    </div>
+
+                    <div class="search-bar">
+                        <form>
+                            <label for="search-input"></label>
+                            <input type="text" id="search-input" class="search-input" placeholder="Search for products">
+
+                            <div class="select">
+                                <select>
+                                    <option value="all categ">All Categories</option>
+                                    <option value="laptop">Laptops & Computers</option>
+                                    <option value="camera">Cameras & Photography</option>
+                                    <option value="acces">Accesories</option>
+                                    <option value="smart phone">Smart Phones & Tablets</option>
+                                    <option value="video game">Video Games & Consoles</option>
+                                    <option value="gatgets">Gadgets</option>
+                                    <option value="Watch">Watch</option>
+                                    <option value="Tv and audio">TV & Audio</option>
+                                    <option value="laptops">Laptops</option>
+                                    <option value="Home teacher">Home Teacher</option>
+                                    <option value="Google Tv">Google Tv</option>
+                                </select>
+                            </div>
+
+                            <button>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="cart col-xs-12">
+                    <div class="col col1">
+                        <div>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Wishlist (0)</span>
+                        </div>
+                        <div>
+                            <i class="fa fa-exchange" aria-hidden="true"></i>
+                            <span>Compare (0)</span>
+                        </div>
+                    </div>
+
+                    <div class="col col2">
+                        <div class="img">
+                            <span>0</span>
+                            <img src="image/img1.png" alt="">
+                        </div>
+
+                        <div class="total-price-basket">
+                            <span class="lbl">Your Cart:</span>
+                            <span class="total-price ft-22">
+                                <span class="woocommerce-Price-amount amount"><bdi><span
+                                            class="woocommerce-Price-currencySymbol">£</span>0.00</bdi></span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- SECTION-1 START -->
+
+    <section class="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col1">
+
+                    <div class="box">
+                        <div class="head">
+                            <i class="fa fa-list-ul" aria-hidden="true"></i>
+                            <span>All Departments</span>
+                        </div>
+
+                        <ul>
+                            <li class="open-click"><a href="#" onclick="menuToggle()">The Theme <i
+                                        class="fas fa-chevron-right"></i></a>
+                                <ul class="dropdown_menu">
+                                    <li class="menu-item">
+                                        <div class="row content-menu">
+                                            <div class=" col col-12 col-xl-3">
+                                                <div class="wpb_wrapper">
+                                                    <h3>Browse the Shop</h3>
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop/">Shop</a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-3-products/">Shop
+                                                                Sidebar : 3 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-4-products/">Shop
+                                                                Sidebar : 4 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-2-products/">Shop
+                                                                Sidebar : 2 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-6-products/">Shop
+                                                                Fullwidth : 6 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-4-products/">Shop
+                                                                Fullwidth : 4 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-3-products/">Shop
+                                                                Fullwidth : 3 Products</a></li>
+                                                    </ul>
+                                                    <h3>Product Types</h3>
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/hi-res-blu-ray-disc-home-theater-system/">Single
+                                                                Product</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/cyber-shot-digital-camera-wx300/">Variable
+                                                                Product</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/dell-inspiron-15-6-inch-touchscreen-laptop/">External
+                                                                Affiliate Link</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/i-book-mini-laptop/">Out
+                                                                of Stock</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/149/">Product
+                                                                On-sale</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class=" col col-12 col-xl-3">
+                                                <div class="wpb_wrapper">
+                                                    <h3>Browse the Shop</h3>
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop/">Shop</a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-3-products/">Shop
+                                                                Sidebar : 3 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-4-products/">Shop
+                                                                Sidebar : 4 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-2-products/">Shop
+                                                                Sidebar : 2 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-6-products/">Shop
+                                                                Fullwidth : 6 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-4-products/">Shop
+                                                                Fullwidth : 4 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-3-products/">Shop
+                                                                Fullwidth : 3 Products</a></li>
+                                                    </ul>
+                                                    <h3>Product Types</h3>
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/hi-res-blu-ray-disc-home-theater-system/">Single
+                                                                Product</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/cyber-shot-digital-camera-wx300/">Variable
+                                                                Product</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/dell-inspiron-15-6-inch-touchscreen-laptop/">External
+                                                                Affiliate Link</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/i-book-mini-laptop/">Out
+                                                                of Stock</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/149/">Product
+                                                                On-sale</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col col-12 col-xl-3">
+                                                <div class="wpb_wrapper">
+                                                    <h3>Browse the Shop</h3>
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop/">Shop</a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-3-products/">Shop
+                                                                Sidebar : 3 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-4-products/">Shop
+                                                                Sidebar : 4 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-2-products/">Shop
+                                                                Sidebar : 2 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-6-products/">Shop
+                                                                Fullwidth : 6 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-4-products/">Shop
+                                                                Fullwidth : 4 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-3-products/">Shop
+                                                                Fullwidth : 3 Products</a></li>
+                                                    </ul>
+                                                    <h3>Product Types</h3>
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/hi-res-blu-ray-disc-home-theater-system/">Single
+                                                                Product</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/cyber-shot-digital-camera-wx300/">Variable
+                                                                Product</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/dell-inspiron-15-6-inch-touchscreen-laptop/">External
+                                                                Affiliate Link</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/i-book-mini-laptop/">Out
+                                                                of Stock</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/149/">Product
+                                                                On-sale</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col col-12 col-xl-3">
+                                                <div class="wpb_wrapper">
+                                                    <h3>Browse the Shop</h3>
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop/">Shop</a>
+                                                        </li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-3-products/">Shop
+                                                                Sidebar : 3 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-4-products/">Shop
+                                                                Sidebar : 4 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-sidebar-2-products/">Shop
+                                                                Sidebar : 2 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-6-products/">Shop
+                                                                Fullwidth : 6 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-4-products/">Shop
+                                                                Fullwidth : 4 Products</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/browse-the-shop/shop-fullwidth-3-products/">Shop
+                                                                Fullwidth : 3 Products</a></li>
+                                                    </ul>
+                                                    <h3>Product Types</h3>
+                                                    <ul>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/hi-res-blu-ray-disc-home-theater-system/">Single
+                                                                Product</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/cyber-shot-digital-camera-wx300/">Variable
+                                                                Product</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/dell-inspiron-15-6-inch-touchscreen-laptop/">External
+                                                                Affiliate Link</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/i-book-mini-laptop/">Out
+                                                                of Stock</a></li>
+                                                        <li><a
+                                                                href="https://demo2.chethemes.com/mediacenter/product/149/">Product
+                                                                On-sale</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">Value of the Day</a></li>
+                            <li class="li-dropdown-2"><a onclick="menuToggle2()" href="#"> Cameras & Photography <i
+                                        class="fas fa-chevron-right"></i></a>
+                                <div class="dropdown_menu_2">
+                                    <div class="row">
+                                        <div class="col col-xl-4 col-lg-4 col-12">
+                                            <h6>Spirit Island</h6>
+                                            <img class="w-100" src="image/section-1.jpg" alt="">
+                                        </div>
+
+                                        <div class=" col col-xl-4 col-lg-4 col-12">
+                                            <h6>Yosemite</h6>
+                                            <img class="w-100"
+                                                src="https://demo2.chethemes.com/mediacenter/wp-content/uploads/2014/10/yosemite-e1413623554575.jpg"
+                                                alt="">
+                                        </div>
+
+                                        <div class=" col col-xl-4 col-lg-4 col-12">
+                                            <h6>Santorini</h6>
+                                            <img class="w-100"
+                                                src="https://demo2.chethemes.com/mediacenter/wp-content/uploads/2014/10/santorini-e1413623582188.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li><a href="#">Tv & Audio</a></li>
+                            <li><a href="#">Laptops & Computers</a></li>
+                            <li><a href="#">Smart Phones & Tablets</a></li>
+                            <li><a href="#">Video Games & Consoles</a></li>
+                            <li><a href="#">Gadgets</a></li>
+                            <li><a href="#">Accesories</a></li>
+                            <li><a href="#">Car Electronics & GPS</a></li>
+                            <li><a href="#">But this theme</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <!-- slider -->
+                <div class="col-xl-9 col-12 col2">
+                    <div class="carusel-content">
+
+                        <div class="slide-container active">
+                            <div class="slide ">
+                                <div class="content">
+                                    <span class="span1">WANT A</span>
+                                    <span class="span2"> $ 200</span>
+                                    <h4>DISCUOUNT ?</h4>
+                                    <h6>ON DESKTOP PCS</h6>
+                                    <p>Term and Conditions Apply</p>
+                                    <button>Shop Now</button>
+                                </div>
+                                <div class="image">
+                                    <img src="image/slider-img-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="slide-container">
+                            <div class="slide">
+                                <div class="content">
+                                    <span class="span1">SAVE ON THE <br>AWARD WINNING </span>
+                                    <span class="span2 slide2">A600</span>
+                                    <p>Save $50 on a6000, or bundle with lens
+                                        and memory card to save an additional $149.98.
+                                    </p>
+                                    <button>Shop Now</button>
+                                </div>
+                                <div class="image">
+                                    <img src="image/slider-img-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="slide-container">
+                            <div class="slide">
+                                <div class="content">
+                                    <span class="span1 slide-3">Unlocked Android Phones </span>
+                                    <span class="slide-3 span2">The Freedom to choose</span>
+                                    <p class="slide-3-p">Stop wasting money on minutes or services you're not even
+                                        using.
+                                        Get an unlocked smart phone and your down your reoccorring monthly wireless
+                                        downses.
+                                        Going unlocked also means you can switch up with a new upgrade whennever you
+                                        like - not when they tell you.
+                                    </p>
+                                    <button>Shop Unlocked Phones</button>
+                                </div>
+                                <div class="image">
+                                    <img src="image/slider-img-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="prev" onclick="prev()"> <i class="fas fa-chevron-left"></i> </div>
+                        <div id="next" onclick="next()"> <i class="fas fa-chevron-right"></i> </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section-2 -->
+    <section class="section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="img-banner">
+                        <a href="">
+                            <div class="banner-text">
+                                <h3 class="banner-title">New Life</h3>
+                                <span class="tagline">Introducing New Category</span>
+                            </div>
+                            <img src="image/bannerl-img1.jpg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="img-banner ">
+                        <a href="">
+                            <div class="banner-text text2">
+                                <h3 class="banner-title">Time & Style</h3>
+                                <span class="tagline">Checkout New Arrivals</span>
+                            </div>
+                            <img src="image/banner-img2.jpg" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION-3 -->
+    <section class="section-3">
+        <div class="container">
+            <div class="box-content">
+                <ul class="box_ul">
+                    <li id="button-1" onclick="openContent1()"><a class="active link-1" href="#">Featured</a></li>
+                    <li id="button-2" onclick="openContent2()"><a class="link-2" href="#">On Sale</a></li>
+                    <li id="button-3" onclick="openContent3()"><a class="link-3" href="#">Top Rated</a></li>
+                </ul>
+                <!-- HOME PAGE-1 -->
+                <div class="tab-content">
+                    <div id="home-page-content-1" class="tab-page active">
+                        <ul class="home-page-tab">
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+
+
+                                        <div class="product-img">
+                                            <img src="image/img-3.1.png" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>Iconia W700</h4>
+                                            <span>ACER</span>
+                                        </div>
+                                        <span class="price-wrapper">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">£</span>629.99</bdi>
+                                            </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Add to cart</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+
+                                        <div class="ribbon red"><span class="onsale">Sale!</span></div>
+
+                                        <div class="product-img">
+                                            <img src="image/img-3.2.jpg" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>POW Action Cam HDR-AS100V</h4>
+                                            <span>SONY</span>
+                                        </div>
+
+                                        <span class="price">
+                                            <span class="price-wrapper">
+                                                <del><span class="woocommerce-Price-amount amount">
+                                                        <bdi><span
+                                                                class="woocommerce-Price-currencySymbol">£</span>299.99</bdi>
+                                                    </span></del>
+                                                <ins><span class="woocommerce-Price-amount amount">
+                                                        <bdi><span
+                                                                class="woocommerce-Price-currencySymbol">£</span>269.99</bdi>
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </span>
+                                        </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Add to cart</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+                                        <div class="product-img">
+                                            <img src="image/img-3.3.jpg" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>Play Station 4</h4>
+                                            <span>SONY</span>
+                                        </div>
+                                        <span class="price-wrapper">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">£</span>399.99</bdi>
+                                            </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Add to cart</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+
+                                        <div class="ribbon red">
+                                            <span class="onsale">Sale!</span>
+                                        </div>
+                                        <div class="ribbon label-52"><span>Bestseller</span></div>
+
+                                        <div class="product-img">
+                                            <img src="image/img-3.4.jpg" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>Cyber-shot Digital Camera WX300</h4>
+                                            <span>SONY</span>
+                                        </div>
+                                        <span class="price-wrapper">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">£</span>399.99</bdi>
+                                            </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Select Options</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <!-- HOME-PAGE 2 -->
+                    <div id="home-page-content-2" class="tab-page">
+                        <ul class="home-page-tab">
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+
+
+                                        <div class="product-img">
+                                            <img src="image/3.2.1.png" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>Iconia W700</h4>
+                                            <span>ACER</span>
+                                        </div>
+                                        <span class="price-wrapper">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">£</span>629.99</bdi>
+                                            </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Add to cart</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+
+                                        <div class="ribbon red"><span class="onsale">Sale!</span></div>
+
+                                        <div class="product-img">
+                                            <img src="image/img-3.2.2.png" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>POW Action Cam HDR-AS100V</h4>
+                                            <span>SONY</span>
+                                        </div>
+
+                                        <span class="price">
+                                            <span class="price-wrapper">
+                                                <del><span class="woocommerce-Price-amount amount">
+                                                        <bdi><span
+                                                                class="woocommerce-Price-currencySymbol">£</span>299.99</bdi>
+                                                    </span></del>
+                                                <ins><span class="woocommerce-Price-amount amount">
+                                                        <bdi><span
+                                                                class="woocommerce-Price-currencySymbol">£</span>269.99</bdi>
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </span>
+                                        </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Add to cart</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+                                        <div class="product-img">
+                                            <img src="image/img-3.2.3.jpg" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>Play Station 4</h4>
+                                            <span>SONY</span>
+                                        </div>
+                                        <span class="price-wrapper">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">£</span>399.99</bdi>
+                                            </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Add to cart</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+
+                                        <div class="ribbon red">
+                                            <span class="onsale">Sale!</span>
+                                        </div>
+                                        <div class="ribbon label-52"><span>Bestseller</span></div>
+
+                                        <div class="product-img">
+                                            <img src="image/img-3.2.4.jpg" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>Cyber-shot Digital Camera WX300</h4>
+                                            <span>SONY</span>
+                                        </div>
+                                        <span class="price-wrapper">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">£</span>399.99</bdi>
+                                            </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Select Options</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+                    <!-- HOME-Page-3 -->
+                    <div id="home-page-content-3" class="tab-page">
+                        <ul class="home-page-tab">
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+
+
+                                        <div class="product-img">
+                                            <img src="image/img-3.3.1.jpg" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>Iconia W700</h4>
+                                            <span>ACER</span>
+                                        </div>
+                                        <span class="price-wrapper">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">£</span>629.99</bdi>
+                                            </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Add to cart</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+
+                                        <div class="ribbon red"><span class="onsale">Sale!</span></div>
+
+                                        <div class="product-img">
+                                            <img src="image/img-3.3.2.jpg" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>POW Action Cam HDR-AS100V</h4>
+                                            <span>SONY</span>
+                                        </div>
+
+                                        <span class="price">
+                                            <span class="price-wrapper">
+                                                <del><span class="woocommerce-Price-amount amount">
+                                                        <bdi><span
+                                                                class="woocommerce-Price-currencySymbol">£</span>299.99</bdi>
+                                                    </span></del>
+                                                <ins><span class="woocommerce-Price-amount amount">
+                                                        <bdi><span
+                                                                class="woocommerce-Price-currencySymbol">£</span>269.99</bdi>
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </span>
+                                        </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Add to cart</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+                                        <div class="product-img">
+                                            <img src="image/img-3.3.3.png" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>Play Station 4</h4>
+                                            <span>SONY</span>
+                                        </div>
+                                        <span class="price-wrapper">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">£</span>399.99</bdi>
+                                            </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Add to cart</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-inner">
+                                    <a href="#" class="product-link">
+
+                                        <div class="ribbon red">
+                                            <span class="onsale">Sale!</span>
+                                        </div>
+                                        <div class="ribbon label-52"><span>Bestseller</span></div>
+
+                                        <div class="product-img">
+                                            <img src="image/img-3.3.4.jpg" alt="">
+                                        </div>
+                                        <div class="product-text">
+                                            <h4>Cyber-shot Digital Camera WX300</h4>
+                                            <span>SONY</span>
+                                        </div>
+                                        <span class="price-wrapper">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi><span class="woocommerce-Price-currencySymbol">£</span>399.99</bdi>
+                                            </span>
+                                    </a>
+
+                                    <div class="hover-area">
+                                        <div class="hover-area-inner">
+                                            <button>Select Options</button>
+                                            <a href="#">Add to Wishlist <i class="fa fa-exchange"
+                                                    aria-hidden="true"></i> Compare </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- one -->
+        <div class="container section-1">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-12">
+                    <aside>
+                        <h4>Featured Products</h4>
+                        <ul>
+                            <li>
+                                <div class="text-content">
+                                    <h6>Iconia W700</h6>
+                                    <bdi><span class="woocommerce-Price-currencySymbol">£</span>629.99</bdi>
+                                </div>
+
+                                <div class="image-content">
+                                   <span class=img-span><img src="image/footer-1.1.png" alt=""></span> 
+                                </div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </div>
+
+
+                <div class="col-xl-4 col-lg-4 col-12"></div>
+                <div class="col-xl-4 col-lg-4 col-12"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

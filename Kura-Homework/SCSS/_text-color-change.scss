@@ -1,0 +1,157 @@
+:root {
+    --color: #ff4522;
+}
+.text-color-change{
+    position: fixed;
+    z-index: 10;
+    top: 25%;
+    right: -200px;
+    // right: 0;
+    width: 200px;
+    transition: all .3s linear;
+    .icon {
+        position: absolute;
+        top: 0px;
+        right: 100%;
+        background-color: white;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        img {
+            width: 26px;
+            animation: fa-spin 2s infinite linear;
+        }
+        @keyframes  fa-spin{
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+
+                transform: rotate(359deg);
+            }
+        }
+    }
+
+    .wrapper{
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        padding: 40px 20px 20px;
+       
+        .title {
+            margin-left: 10px;
+            color: black;
+            font-family: "Poppins";
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px solid black;
+        }
+        ul.colors-palete {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            padding: 25px 0px;
+            flex-wrap: wrap;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            grid-auto-rows: minmax(100px, auto);
+            align-items: flex-start;
+            li{
+                list-style: none;
+                a{
+                    display: block;
+                   
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                  
+                }
+
+                
+                
+            }
+        }
+        .cursor {
+            width: 100%;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            padding: 15px 0;
+            margin-left: 10px;
+            li{
+                list-style: none;
+                padding-right: 20px;
+                a.first{
+                    text-decoration: none;
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    border-radius: 50%;
+                    border: 2px solid grey;
+                    span{
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: grey;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+.text-color-change.opened {
+    right: 0px;
+}
+
+#blue{
+    background: #007aff;
+}
+#green{
+    background: #66B95C;
+}
+#brown{
+    background: #ff9800;
+}
+#pink {
+    background: #ff5e94;
+}
+#orange {
+    background: #ff4522;
+}
+#white {
+    background: #e5e5e5;
+}
+
+#purple {
+    background: #9200ee;
+}
+#skyblue {
+    background: #00D4BD;
+}
+#cadetBlue {
+    background: #5e9e9f;
+}
+#crimson {
+    background: #e65f78;
+}
+#olive {
+    background: #666d41;
+}
+#red {
+    background: #fe0000;
+}

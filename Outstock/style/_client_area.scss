@@ -1,0 +1,40 @@
+.client_area {
+    padding: 15px 0 140px; 
+    .client__slider  {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .client_area {
+        padding: 15px 0 140px; 
+        .client__slider  {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .cloned{
+                display: none;
+            }
+           
+        }
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .client_area {
+        padding: 15px 0 140px; 
+        .client__slider  {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .cloned {
+                display: none;
+            }
+            .cloned1 {
+                display: none;
+            }
+        }
+    }
+    
+}

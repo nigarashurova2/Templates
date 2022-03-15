@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import "header";
+@import "home-section";
+@import "text-color-change";
+
+body{
+    ul.list {
+        li{
+            a{
+                &:hover{
+                    color: var(--color);
+                }
+            }
+        }
+    }
+}

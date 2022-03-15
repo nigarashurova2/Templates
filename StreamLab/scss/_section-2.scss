@@ -1,0 +1,262 @@
+.section-2 {
+    padding: 90px 0 80px 0;
+    background-color: #161616 ;
+    // background-color: #222222;
+    color: white;
+
+    .container {
+        max-width: 95%;
+
+        .row1 {
+            font-family: 'Jost', sans-serif;
+
+            h4 {
+                color: white;
+                font-size: 28px;
+                font-family: 'Jost', sans-serif;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            .col2 {
+                text-align: right;
+
+                button {
+                    background-color: #E50916;
+                    border: none;
+                    outline: none;
+                    padding: 10px 25px;
+                    color: white;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: all 0.6s ease;
+                    &:hover {
+                        background-color: #af0813;
+                        transition: all 0.6s ease;
+                    }
+                }
+            }
+        }
+
+        // row-carousel
+        .row-carousel {
+            margin-top: 20px;
+
+            .owl-carousel {
+                button.owl-prev {
+                    font-size: 50px !important;
+                    outline: none;
+                    text-align: center;
+                    text-indent: inherit;
+                    cursor: pointer;
+                    text-align: center;
+                    font-size: 32px;
+                    position: absolute;
+                    top: 20%;
+                    left: -11.5px;
+                    line-height: 1;
+                    padding: 0;
+                    margin: 0;
+                    color: white !important;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+                button.owl-next {
+                    font-size: 50px !important;
+                    outline: none;
+                    text-align: center;
+                    text-indent: inherit;
+                    cursor: pointer;
+                    text-align: center;
+                    font-size: 32px;
+                    position: absolute;
+                    top: 20%;
+                    right: -11.5px;
+                    line-height: 1;
+                    padding: 0;
+                    margin: 0;
+                    color: white !important;
+                    border: none;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+                .item {
+                    
+                    &:hover {
+                        transition: all 0.5s ease;
+                        img{
+                            transition: transform 0.8s !important;
+                                transform: scale(1.3) !important;
+                            
+                        }
+                        .img-content {
+                            margin-bottom: 10px;
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+                            // transition: all 0.4s linear;
+                           
+                        }
+                        
+                        .movie-action {
+                            display: block !important;
+                            transition: all 0.8s linear;
+                        }   
+                        
+                        
+                    }
+                    .img-content {
+                        margin-bottom: 10px;
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        img{
+                            transition: transform .4s;
+                            &:hover {
+                                transform: scale(1.5);
+                            }
+                        }
+                        .movie-add{
+                            display: flex;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            .share-button{
+                                transition: all 0.8s ease;
+                                &:hover{
+                                    .submenu {
+                                        display: block;
+                                        transition: all 0.8s linear !important;
+                                    }
+                                }
+                                .submenu{
+                                    position: absolute;
+                                    top: -100px;
+                                    left: 40%;
+                                    margin: 0;
+                                    padding: 0;
+                                    background-color: white;
+                                    display: none;
+                                    li {
+                                        padding: 0;
+                                        list-style: none;
+                                        width: 100%;
+                                        a{
+                                            text-decoration: none;
+                                            color: white;
+                                            display: block;
+                                            color: black;
+                                            padding: 6px ;
+                                            text-align: center;
+                                            &:hover{
+                                                color: #E50916;
+                                                transition: all 0.5s ease;
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .button-movie{
+                                padding: 13px;
+                                cursor: pointer;
+                                font-size: 16px;
+                                .far.fa-heart {
+                                    &:hover {
+                                        color: #E50916;
+                                        transition: all 0.5s ease;
+                                    }
+                                }
+                            }
+                        }
+                        // -------
+                        .movie-action {
+                            position: absolute;
+                            top: 30%;
+                            left: 42%;
+                            z-index: 87;
+                            display: none;
+                            transition: all 0.6s ease;
+                            a{
+                                background-color: #E50916;
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 50%;
+                                font-size: 18px;
+                                color: white;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                text-decoration: none;
+                                
+                            }
+                        }
+                        // ------
+                    }
+
+                    .info-contain {
+                        h5 {
+                            color: white;
+                            cursor: pointer;
+                            &:hover {
+                                color: #E50916;
+                                transition: all 0.8s ease;
+                            }    
+                        }
+
+                        ul {
+                            // margin: 0;
+                            // padding: 0;
+                            // display: flex;
+                            // margin: 5px 0 0;
+                            // padding: 0;
+                            // display: inline-block;
+                            // width: 100%;
+                           display: flex; 
+                            margin: 0;
+                            padding: 0;
+
+                            .first-li {
+                                list-style: none;
+                                
+                            }
+                            .second-li {
+                                span{
+                                    color: #E50916;
+                                }
+                            }
+                            li {
+                                // list-style: circle;
+                                margin: 0 15px 0px 0;
+                                padding: 0 15px 0px 0;
+                                // font-size: 14px;
+                                // line-height: normal;
+                                // display: inline;
+                                // align-items: center;
+                                // position: relative;
+                                // color: white;
+
+                               
+                            }
+
+                        }
+                    }
+                }
+
+                .owl-dots {
+                    display: none;
+                }
+
+                 button.owl-prew {
+                    position: absolute;
+                    top: -100% !important;
+                }
+            }
+        }
+
+    }
+}

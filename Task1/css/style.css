@@ -1,0 +1,158 @@
+body, * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container1 {
+    width: 100%;
+    height: 650px;
+    background-image: url("https://planetary.s3.amazonaws.com/web/assets/pictures/_2400x1350_crop_center-center_82_line/20200401_bg_planetary-society_wise-pleaides-schmidt_uhd3840x2160.jpg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.container1 h1 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+header nav  {
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+    margin: 10px;
+}
+header nav ul li a {
+    text-decoration: none;
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 5px red;
+    
+}
+header nav ul li a:hover {
+     color: black;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container1 .p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.container2 {
+    width: 100%;
+    height: 140vh;
+    background: rgb(53, 53, 53);
+}
+.container2 .services h2 {
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    
+}
+.boxs {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 40px 10px;
+}
+.box {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    background: rgb(117, 116, 116);
+    margin: 5px;
+}
+.container2 .services .boxs p{
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+.container2 .services button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: skyblue;
+    border-radius: 4px;
+    color: black;
+    position: relative;  
+    cursor: pointer; 
+}
+.img {
+    width: 100%;
+    height: 150px;  
+    margin: 10px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-1 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rbOtwA2TdlKmxGv6AWKzDsuct54jCEdfrw&usqp=CAU");
+}
+.img-2 {
+    background-image: url("https://www.risalehaber.com/d/news/242131.jpg");
+}
+.img-3 {
+    background-image: url("https://d.neoldu.com/news/963.jpg");
+}
+.button {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input, textarea {
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 7px;
+    
+}
+form button {
+    margin: 10px;
+}
+textarea {
+    height: 100px;
+}
+.information p {
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+}

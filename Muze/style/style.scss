@@ -1,0 +1,37 @@
+@import "header";
+@import "section-1";
+@import "swiper_slider";
+@import "section-4";
+@import "section-5";
+
+@media only screen and (max-width: 800px) {
+    body{
+        header{
+            .navbar{
+                .collapse{
+                    padding-left: 0px !important;
+                }
+                .btn{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    
+    
+  }
+  @media only screen and (max-width: 500px) {
+    body{
+        .container{
+            .section-5{
+                .card{
+                    margin-bottom: 60px;
+                }
+            }
+        }
+      
+    }
+    
+  }

@@ -1,0 +1,137 @@
+nav{
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #e0dfdf;
+    padding: 5px 0px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        div{
+            ul{
+                display: flex;
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;    
+
+                    a{
+                        text-decoration: none;
+                        color: #3d3d3d;
+                        font-size: 12px;
+                        font-weight: 500;
+                        font-family: 'Open Sans', sans-serif;
+                        padding: 0px 13px;
+                        border-right: 1px solid rgb(216, 213, 213);
+                        display: flex;
+                        align-items: center;
+                        i{
+                            margin-left: 4px;
+                            font-size: 11px;
+                            color: rgb(224, 224, 224);
+                        }
+                        &:hover {
+                            color: #59B210;
+                            transition: all 0.4s ease;
+                        }
+                    }
+                    .dropdown_menu-nav{
+                        z-index: 12;
+                        position: absolute;
+                        width: auto;
+                        height: auto;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        border: 1px solid rgba(182, 182, 182, 0.6);
+                        border-top: 1px solid #59B210;
+                        box-shadow: 2px 2px 3px 2px rgba(90, 90, 90, 0.4);
+                        visibility: hidden;
+                        opacity: 0;
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            list-style-type: none;
+                            a{
+                                margin: 0 4px;
+                                padding: 5px 40px 5px 10px;
+                                display: block;
+                                width: 100%;
+                                border: none;
+                                font-weight: 500;
+                            }
+                            a.active {
+                                color: #59B210;
+                            }
+                        }
+                    }
+
+                    .a{
+                        border-right: none;
+                    }
+                    .dropdown_menu-nav.active-nav{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    .dropdown_menu-nav-2.active-nav{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    .dropdown_menu-nav-3.active-nav{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    nav { 
+    .container{
+        
+        div{
+            ul{
+                display: flex;
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;    
+                    margin: 0;
+                    padding: 0;
+                    a{
+                        text-decoration: none;
+                        color: #3d3d3d;
+                        font-size: 11px;
+                        font-weight: 400;
+                        font-family: 'Open Sans', sans-serif;
+                        padding: 0px 8px;
+                        border-right: 1px solid rgb(216, 213, 213);
+                    }
+                    .a{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }
+        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+            nav {        
+                .container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    div{
+                        margin: 10px 0px;
+                        font-size: 12px;
+                    }
+                }
+            }
+}

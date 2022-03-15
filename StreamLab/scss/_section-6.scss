@@ -1,0 +1,139 @@
+.section-6 {
+    background-color: #161616;
+    padding-bottom: 40px;
+    color: white;
+
+    .container, .container-fluid {
+        max-width: 95%;
+
+        .carusel-content {
+            position: relative;
+            .slide-container {
+                border-left: 2px solid #E50916;
+                display: none;
+                .slide {
+                    width: 100%;
+                    min-height: 400px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    
+                    .slide-info {
+                        animation: slideContent .4s linear .6s backwards;
+                        h3 {
+                            font-size: 54px;
+                            line-height: 62px;
+                            
+                        }
+                    }
+
+                    // -----
+                    .movie-meta-holder {
+                        animation: slideContent .6s linear .8s backwards;
+                        p{
+                            display: inline-block;
+                            width: 100%;
+                            font-size: 18px;
+                            margin-bottom: 30px;
+                            color: rgb(189, 185, 185);
+                            font-weight: 500;
+                        }
+                        ul {
+                            margin: 5px 0 15px;
+                            padding: 0;
+                            display: flex;
+                            align-items: center;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+
+                            li {
+                                
+                                // font-family: var(--title-fonts);
+                                // color: var(--white-color);
+                                // margin: 10px 0 0 20px;
+                                // padding: 0 0 0 20px;
+                                // font-size: 16px;
+                                // line-height: normal;
+                                // display: flex;
+                                // float: left;
+                                // align-items: center;
+                                // position: relative;
+                                margin: 0 15px 0px 0;
+                                padding: 0 15px 0px 0;
+                                font-weight: 500;
+                                &:nth-child(1){
+                                    list-style: none;
+                                }
+                                
+                            }
+                        }
+                    }
+
+                    // -------
+                    .movie-button{
+                        animation: slideContent .8s linear .9s backwards;
+                        button {
+                            border: none;
+                            outline: none;
+                            background-color: #E50916;
+                            color: white;
+                            font-size: 18px;
+                            padding: 15px;
+                            font-weight: 500;
+                            &:hover{
+                                background-color: #a7000b;
+                                transition: all 0.6s ease;
+                            }
+                        }
+                    }
+                    // ---------
+                }
+            }
+            .slide-container.active{
+                display: block !important;
+            }
+
+            #prev,
+            #next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: transparent;
+                font-size: 22px;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                cursor: pointer;
+                font-weight: bolder;
+                color: rgb(160, 159, 159);
+                &:hover{
+                    background-color: transparent;
+                    color: #E50916;
+                }
+                   
+                
+            }
+
+            #prev {
+                left: 5px;
+            }
+
+            #next {
+                right: 5px;
+            }
+
+        }
+        
+    }
+}
+
+@keyframes slideContent {
+    0% {
+        opacity: 0;
+        transform: translateX(120px);
+    }
+}
